@@ -240,7 +240,7 @@ li{
 /*header*/
 
 header{
-    border-bottom: 1px solid #a7a9ac;
+    border-bottom: 1px solid #ccc;
     float: left;
     width: 100%;
     margin: 20px 0;
@@ -288,7 +288,7 @@ ul.main-nav li:last-of-type{
 .hero-title{
     padding:0 0 20px 0;
     margin:0 0 20px 0 ;
-    border-bottom: 1px solid #a7a9ac;
+    border-bottom: 1px solid #ccc;
     float: left;
     width: 100%;
 }
@@ -296,7 +296,7 @@ ul.main-nav li:last-of-type{
 .hero-title h1{
     font-size: 75px;
     font-family: 'museo_sans_900regular';
-    line-height: 90%;  
+    line-height: 104%;  
     margin-bottom: 0px;
 }
 
@@ -306,7 +306,7 @@ ul.main-nav li:last-of-type{
 
 .hero-descrip{
     margin: 20px 0 40px 0;
-        border-bottom: 1px solid #a7a9ac;
+        border-bottom: 1px solid #ccc;
 }
 
 .hero-descrip p{
@@ -426,7 +426,7 @@ a.bar:after{
 
 .port-select{
     text-align: center;
-    border-bottom: 1px solid #a7a9ac;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
     margin-bottom: 20px;
     float: left;
@@ -663,7 +663,7 @@ sidebar h1{
     float: left;
     width: 100%;
     padding: 20px 0;
-
+    margin-top: 50px;
     color: #585858;
 }
 
@@ -676,8 +676,8 @@ sidebar h1{
 .sub-footer h1{
     font-size: 18px;
     text-transform: uppercase;
-    border-top: 1px solid #a7a9ac;
-    border-bottom: 1px solid #a7a9ac;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     padding: 10px 0;
     font-family: 'museo_sans_100regular';
 }
@@ -693,7 +693,7 @@ sidebar h1{
 }
 
 a.square-button {
-    background-color: #a7a9ac;
+    background-color: #ccc;
     color: #fff;
     padding: 15px;
     width: 90%;
