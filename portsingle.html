@@ -2,14 +2,18 @@
 <html>
 <head>
   <link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-   <script src="http://code.jquery.com/jquery-latest.js"></script> 
-   <!--custom scripts-->
-   <script type="text/javascript" src="js/scripts.js"></script>
+<!--  external stylesheets-->
+<link href="css/royalslider.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/rs-default.css" rel="stylesheet" type="text/css" media="screen" />
+<!--scripts-->
+  <script  src="js/jquery-1.8.0.min.js"></script>
   <!--isotope-->
   <script src="js/jquery.isotope.js"></script>
   <script src="js/isotope.config.js"></script>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--slider-->
+  <script type="text/javascript" src="js/jquery.royalslider.min.js"></script>
+  <!--custom scripts-->
+  <script type="text/javascript" src="js/scripts.js"></script>
   <title>Website</title>
 </head>
 <body>
@@ -30,7 +34,20 @@
         </header>
     </div>
     <div class="slider">
-    </div>
+        <div class="sliderContainer visibleNearby fullWidth clearfix">
+          <div id="gallery-1" class="royalSlider rsDefault">
+            <div class="rsContent">
+            <a class="rsImg" data-rsdelay="1000" href="http://placekitten.com/900/700">Still Life: Vase with Twelve Sunflowers<span>Vincent van Gogh</span></a>
+            </div><!--end rs content-->
+            <div class="rsContent">
+            <a class="rsImg" data-rsdelay="1000" href="http://placekitten.com/900/700">Still Life: Vase with Twelve Sunflowers<span>Vincent van Gogh</span></a>
+            </div><!--end rs content-->
+            <div class="rsContent">
+            <a class="rsImg" data-rsdelay="1000" href="http://placekitten.com/900/700">Still Life: Vase with Twelve Sunflowers<span>Vincent van Gogh</span></a>
+            </div><!--end rs content-->
+          </div><!--end gal 1-->
+        </div><!--end slider container-->
+    </div><!--end slider-->
     <div class="inner">
         <div class="content port-content">
             <h1 class="port-title">Project Title Runs Two Lines</h1>
