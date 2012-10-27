@@ -258,28 +258,28 @@ header{
     opacity: 1;
 }
 
-ul.main-nav{
+ul.main-nav, .main-nav ul{
     float: right;
     list-style: none;
     margin-top: -23px;
 }
 
-ul.main-nav li a{
+ul.main-nav li a, .main-nav ul li a{
     color:#707070;
 }
 
-ul.main-nav li a:hover{
+ul.main-nav li a:hover, .main-nav ul li a:hover{
     color:#1baee4;
 }
 
-ul.main-nav li{
+ul.main-nav li, .main-nav ul li{
     float: left;
     margin-right: 40px;
     text-transform: uppercase;
     font-size: 14px;
 }
 
-ul.main-nav li:last-of-type{
+ul.main-nav li:last-of-type, .main-nav ul li:last-of-type{
     margin-right: 0;
 }
 
@@ -423,6 +423,11 @@ a.bar:after{
 }
 
 /*portfolio*/
+
+.top-text p{
+    font-size: 1.3em!important;
+    font-family: 'museo_sans_100regular';
+}
 
 .port-select{
     text-align: center;
@@ -629,7 +634,7 @@ h1.port-title{
 }
 
 .port-content img{
-    padding: 0 0 20px 0;
+    padding: 30px 0 50px 0;
     width: 100%;
     height: auto;
     margin-left: -50px;
