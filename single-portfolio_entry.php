@@ -20,7 +20,17 @@
     <div class="content port-content">
         <h1 class="port-title"><?php the_title(); ?></h1>
         <ul class="port-tags clearfix">
-             <?php the_terms( $post->ID, 'skill', '<li>', ' ,', '</li>' ); ?>
+             <?php 
+                        $product_terms = wp_get_object_terms($post->ID, 'skill');
+                        if(!empty($product_terms)){
+                            if(!is_wp_error( $product_terms )){
+                                foreach($product_terms as $term){
+                                echo '<li>'.$term->name.'</li>'; 
+                                }
+                            }
+                        }
+                    ?>
+
         </ul>
         
         <div class="port-copy">

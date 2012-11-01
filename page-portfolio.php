@@ -9,9 +9,9 @@ Template Name: Portfolio
 <div class="inner">
     <div class="content">
         <div class="hero-title">
-           <h1> Portfolio </h1>
+           <h1><?php the_title(); ?></h1>
            <p class="hero-subtext">
-               We focus on simple, clean solutions.
+                <?php echo get_post_meta($post->ID, 'hero_sub', true); ?>
            </p>
         </div>
         <nav class="port-select">

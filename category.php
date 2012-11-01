@@ -1,6 +1,6 @@
 <?php get_header(); ?>
             <div class="inner">
-                <h1>
+                <h3>
                     Posts in:
                     <span class="blue">
                     <?php
@@ -8,7 +8,7 @@
                     echo $category[0]->cat_name;
                     ?>
                     </span>
-                </h1>
+                </h3>
                 <div class="content blog-container">
                     <div class="blog">
                         <!--start the loop-->

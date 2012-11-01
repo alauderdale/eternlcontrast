@@ -77,7 +77,19 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
      			'rewrite' => array( 'slug' => '?skill=' ),	// pretty permalinks for your taxonomy?
      		)
      	);
+
+        register_taxonomy(
+            'service',        // internal name = machine-readable taxonomy name
+            'home_eservice',      // object type = post, page, link, or custom post-type
+            array(
+                'hierarchical' => true,
+                'label' => 'services',    // the human-readable taxonomy name
+                'query_var' => true,    // enable taxonomy-specific querying
+                'rewrite' => array( 'slug' => '?service=' ),  // pretty permalinks for your taxonomy?
+            )
+        );
      }
+
      add_action('init', 'my_custom_taxonomies', 0);
      
      
@@ -91,12 +103,35 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
      $prefix = 'sic_';
       
      $meta_box = array(
+
+        
+        'id' => 'my-meta-box',
+        'title' => 'Portfolio content Thumb',
+        'page' => 'page',
+        'context' => 'normal',
+        'priority' => 'high',
+        'fields' => array(
+
+            /// services
+        
+            array(
+                'name' => 'Hero Sub Text',
+                'desc' => 'add sub text belop title',
+                'id' => 'hero_sub',
+                'type' => 'text',
+                'std' => ''
+            ),   
+                        
+        ),
+
      	'id' => 'my-meta-box',
      	'title' => 'Portfolio content Thumb',
      	'page' => 'portfolio_entry',
      	'context' => 'normal',
      	'priority' => 'high',
      	'fields' => array(
+
+            /// portfolio
      	
          	array(
          		'name' => 'Slider Images',
@@ -137,9 +172,44 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
      			'type' => 'textarea',
      			'std' => ''
      		),
-     		
-     		
-     	)
+     		     		
+     	),
+
+        'id' => 'my-meta-box',
+        'title' => 'Hero Sub Text',
+        'page' => 'home_eservice',
+        'context' => 'normal',
+        'priority' => 'high',
+        'fields' => array(
+
+            /// services
+        
+            array(
+                'name' => 'service preview',
+                'desc' => 'add a service preview description',
+                'id' => 'service_preview',
+                'type' => 'textarea',
+                'std' => ''
+            ),
+
+            array(
+                'name' => '',
+                'desc' => 'Select a thumb for this service (for home page)',
+                'id' => 'upload_image_button',
+                'type' => 'button',
+                'std' => 'Browse'
+            ),
+
+            array(
+                'name' => 'Service Thumb',
+                'desc' => 'Select a Thumb',
+                'id' => 'upload_image',
+                'type' => 'text',
+                'std' => ''
+            ),
+                        
+        ),
+
      );
      
      add_action('admin_menu', 'mytheme_add_box');

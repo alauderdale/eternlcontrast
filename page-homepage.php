@@ -24,15 +24,20 @@ Template Name: Home
                 <h1> How Can We Help You? </h1>
                 <div class="home-services">
                     <?php
-                    $portfolioloop = new WP_Query( array( 'post_type' => 'home_eservice') );
+                    $servicesloop = new WP_Query( array( 'post_type' => 'home_eservice') );
                      ?>
-                     <?php while ( $portfolioloop->have_posts() ) : $portfolioloop->the_post(); ?>
+                     <?php while ( $servicesloop->have_posts() ) : $servicesloop->the_post(); ?>
                         <div class="home-service">
                             <h3><?php the_title(); ?>  </h3>
-                            <?php the_content(); ?>  
+                            <p>
+                                <?php echo get_post_meta($post->ID, 'service_preview', true); ?> 
+                            </p>
+                            <a href="index.php?pagename=services">
                             <div class="home-service-featred-img">
-                                <?php echo get_the_post_thumbnail(); ?> 
+<!--                                 <?php echo get_the_post_thumbnail(); ?>  -->
+                                  <img src="<?php echo get_post_meta($post->ID, 'upload_image', true); ?>" width="436" height="177"/>
                             </div>
+                            </a>
                             <div class="home-service-bottom-links">
                                 <a class="bar" href="index.php?pagename=portfolio">Portfolio</a>
                                 <a href="index.php?pagename=services">Services</a>

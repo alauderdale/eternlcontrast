@@ -262,7 +262,7 @@ header{
 .logo  {
     background-image: url(../images/logo.png);
     width: 283px;
-    height: 41px;
+    height: 61px;
     opacity: .8;
 }
 
@@ -368,10 +368,6 @@ a.bar:after{
 
 /*services*/
 
-.gray-bg{
-    background-color: #f2f2f2;
-    float: left;
-}
 
 .service{
     width: 100%;
@@ -380,11 +376,22 @@ a.bar:after{
     
 }
 
+.service:nth-child(3n+2) {
+    background-color: #f2f2f2;
+}
+
 
 
 .service-descrip{
     width: 40%;
+    float: left;
+    text-align: left;
 }
+
+.service:nth-child(odd) .service-descrip {
+    float: right!important;
+}
+
 
 .service-descrip p{
     margin: 10px 0 ;
@@ -398,9 +405,23 @@ a.bar:after{
     margin-bottom: 10px;
 }
 
-.service-img {
+
+
+.serviceimg {
     width: 60%;
+    float: right;
 }
+
+
+.service:nth-child(odd) .serviceimg {
+    float: left;
+}
+
+.service:nth-child(4) .serviceimg img {
+    margin-top: -93px;
+}
+
+
 
 .right{
     float: right;
@@ -410,35 +431,6 @@ a.bar:after{
     float: left;
 }
 
-.web-design-img{
-    width: 429px;
-    height: 494px;
-    background-image: url(../images/web-design.png);
-    margin-top: -80px;
-}
-
-.logo-design-img{
-    width: 510px;
-    height: 390px;
-    background-image: url(../images/logo-design.png);
-
-}
-
-.print-design-img{
-    width: 787px;
-    height: 293px;
-    background-image: url(../images/branding.png);
-    position: relative;
-    top: -140px;
-    left: 110px;
-    margin-bottom: -140px;
-}
-
-.smartphone-design-img{
-    width: 549px;
-    height: 507px;
-    background-image: url(../images/smartphone.png);
-}
 
 /*portfolio*/
 
