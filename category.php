@@ -1,5 +1,14 @@
 <?php get_header(); ?>
             <div class="inner">
+                <h1>
+                    Posts in:
+                    <span class="blue">
+                    <?php
+                    $category = get_the_category(); 
+                    echo $category[0]->cat_name;
+                    ?>
+                    </span>
+                </h1>
                 <div class="content blog-container">
                     <div class="blog">
                         <!--start the loop-->

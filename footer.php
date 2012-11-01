@@ -3,18 +3,15 @@
         <div class="inner">
             <div class="footer-col">
                 <h1>Latest From The Blog</h1>
+                <?php
+                $footerloop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 3) );
+                 ?>
+                 <?php while ( $footerloop->have_posts() ) : $footerloop->the_post(); ?>
                 <div class="footer-post">
-                    <a href="#"><h2>Blog Post Title</h2></a>
-                    <p>Nulla condimentum erat nec risus pulvinar imperdiet ullamcorper dolor tempus...</p>
+                    <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+                    <?php the_excerpt(); ?>
                 </div>
-                <div class="footer-post">
-                    <a href="#"><h2>Blog Post Title</h2></a>
-                    <p>Nulla condimentum erat nec risus pulvinar imperdiet ullamcorper dolor tempus...</p>
-                </div>
-                <div class="footer-post">
-                    <a href="#"><h2>Blog Post Title</h2></a>
-                    <p>Nulla condimentum erat nec risus pulvinar imperdiet ullamcorper dolor tempus...</p>
-                </div>
+                <?php endwhile; ?>
             </div>
             <div class="footer-col">
                 <h1>Twitter</h1>
@@ -31,7 +28,7 @@
             <div class="footer-col">
                 <h1>Contact</h1>
                 <div class="footer-post">
-                    <h2>Email</h2>
+                    <h2><a href="mailto:alauderdale@mac.com">Email</a></h2>
                     <p>alauderdale@mac.com</p>
                 </div>
                 <div class="footer-post">

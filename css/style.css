@@ -3,6 +3,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /*fonts*/
 
 @font-face {
+    font-family: 'ozoneregular';
+    src: url('../fonts/ozone-webfont.eot');
+    src: url('../fonts/ozone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ozone-webfont.woff') format('woff'),
+         url('../fonts/ozone-webfont.ttf') format('truetype'),
+         url('../fonts/ozone-webfont.svg#ozoneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+@font-face {
     font-family: 'museo_sans_900italic';
     src: url('../fonts/museosans-900italic-webfont.eot');
     src: url('../fonts/museosans-900italic-webfont.eot?#iefix') format('embedded-opentype'),
@@ -258,6 +270,12 @@ header{
     opacity: 1;
 }
 
+.current_page_item a{
+    color:#1baee4!important;
+    border-bottom: solid 3px #1baee4;
+    padding-bottom: 25px;
+}
+
 ul.main-nav, .main-nav ul{
     float: right;
     list-style: none;
@@ -429,6 +447,19 @@ a.bar:after{
     font-family: 'museo_sans_100regular';
 }
 
+.top-text p:first-child:first-letter{
+    font-family: 'ozoneregular';
+    font-size: 135pt!important;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 71px;
+    margin-top: 50px;
+    margin-left: -29px;
+    color:#c2c2c2;
+    text-transform: uppercase;
+    
+}
+
 .port-select{
     text-align: center;
     border-bottom: 1px solid #ccc;
@@ -503,6 +534,8 @@ ul.portfolio-thumbs li{
 .slider{
     margin-bottom: 10px;
     clear: both;
+    position: relative;
+    top: -20px;
 }
 
 
@@ -620,7 +653,7 @@ h1.port-title{
 .blockquote{
     color: #1baee4;
     font-size: 30px;
-    font-family: 'museo_sans_100regular';
+    font-family: 'museo_sans_700regular';
     font-weight: lighter;
     width: 30%;
     float: left;
@@ -650,6 +683,7 @@ h1.port-title{
 .blog h1{
     font-family: 'museo_sans_700regular';
     margin: 0;
+    margin-bottom: 20px;
 }
 
 .blog h1 a{
@@ -705,7 +739,7 @@ sidebar p{
     margin: 0 0 10px 0;
 }
 
-ul.categories{
+.categories ul{
     list-style: none;
     margin: 0;
     font-size: 12px;

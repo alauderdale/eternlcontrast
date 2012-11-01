@@ -1,17 +1,18 @@
 <?php get_header(); ?>
 
+
+<?php $ttrust_project_images = get_post_meta($post->ID, 'slider_text', true); ?>
+<?php $ttrust_project_images = explode("\n", $ttrust_project_images); ?>
+
 <div class="slider">
     <div class="sliderContainer visibleNearby fullWidth clearfix">
       <div id="gallery-1" class="royalSlider rsDefault">
-        <div class="rsContent">
-        <a class="rsImg" data-rsdelay="1000" href="http://placekitten.com/900/700">Still Life: Vase with Twelve Sunflowers<span>Vincent van Gogh</span></a>
-        </div><!--end rs content-->
-        <div class="rsContent">
-        <a class="rsImg" data-rsdelay="1000" href="http://placekitten.com/900/700">Still Life: Vase with Twelve Sunflowers<span>Vincent van Gogh</span></a>
-        </div><!--end rs content-->
-        <div class="rsContent">
-        <a class="rsImg" data-rsdelay="1000" href="http://placekitten.com/900/700">Still Life: Vase with Twelve Sunflowers<span>Vincent van Gogh</span></a>
-        </div><!--end rs content-->
+        <?php $c=1; foreach ($ttrust_project_images as $project_image) {?>
+        	<?php $img_url = str_replace("\r", "", $project_image); ?>
+            <div class="rsContent">
+            <a class="rsImg" data-rsdelay="1000" href="<?php echo $img_url; ?>"></a>
+            </div><!--end rs content-->
+        <?php } ?>
       </div><!--end gal 1-->
     </div><!--end slider container-->
 </div><!--end slider-->

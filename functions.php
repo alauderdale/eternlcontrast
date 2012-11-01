@@ -4,6 +4,18 @@
       add_theme_support( 'post-thumbnails' );
     }
     
+//    exerpt
+
+function new_excerpt_more( $more ) {
+	return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+function custom_excerpt_length( $length ) {
+	return 10;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+    
     //main nav
     
     register_nav_menu( 'main_nav', __( 'Main navigation menu', 'mytheme' ) );
@@ -25,6 +37,19 @@
     
     		)
     	);
+    	
+    	
+    	register_post_type( 'home_eservice',
+    			array(
+    				'labels' => array(
+    					'name' => __( 'Home Services' ),
+    					'singular_name' => __( 'Home Service' )
+    				),
+    				'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+    				'public' => true,
+    	
+    			)
+    		);
     	
     }
     
@@ -75,11 +100,12 @@
      	
          	array(
          		'name' => 'Slider Images',
-         		'desc' => 'add slider images seporated by commas',
+         		'desc' => 'Enter the full URL of each image on a separate line.',
          		'id' => 'slider_text',
          		'type' => 'textarea',
          		'std' => ''
          	),
+         	
          	
      		array(
      			'name' => 'Thumb',
