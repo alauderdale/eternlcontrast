@@ -142,14 +142,14 @@ $meta_boxes = array(
             ),
             array(
                  'name' => 'Thumb',
-                 'desc' => 'Select a Thumb',
+                 'desc' => 'Select a featured image for post',
                  'id' => 'upload_image',
                  'type' => 'text',
                  'std' => ''
             ),
             array(
                  'name' => '',
-                 'desc' => 'Select an thumb Image',
+                 'desc' => 'Select a featured image for post Image',
                  'id' => 'upload_image_button',
                  'type' => 'button',
                  'std' => 'Browse'

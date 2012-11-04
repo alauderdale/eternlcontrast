@@ -35,7 +35,7 @@ Template Name: Home
                             <a href="index.php?pagename=services">
                             <div class="home-service-featred-img">
 <!--                                 <?php echo get_the_post_thumbnail(); ?>  -->
-                                  <img src="<?php echo get_post_meta($post->ID, 'upload_image', true); ?>" width="436" height="177"/>
+                                  <img src="<?php echo get_post_meta($post->ID, 'upload_image', true); ?>" />
                             </div>
                             </a>
                             <div class="home-service-bottom-links">

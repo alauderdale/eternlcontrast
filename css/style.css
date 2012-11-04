@@ -341,6 +341,11 @@ ul.main-nav li:last-of-type, .main-nav ul li:last-of-type{
 
 /*home services*/
 
+.home-service-featred-img img{
+  width: 390px;
+  height: auto;
+}
+
 
 .home-services{
     padding: 20px 0;
@@ -349,8 +354,12 @@ ul.main-nav li:last-of-type, .main-nav ul li:last-of-type{
 
 .home-service {
     float: left;
-    width: 480px;
-    margin-bottom: 50px;
+    width: 455px;
+    margin-bottom: 70px;
+    margin-right: 50px;
+}
+.home-service:nth-child(even){
+  margin-right: 0;
 }
 
 .home-service h3{
