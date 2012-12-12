@@ -4,7 +4,7 @@
     <title>
         <?php wp_title(''); ?> <?php bloginfo('name'); ?>
     </title>
-  <link href="<?php bloginfo('template_url'); ?>/css/style.css" rel="stylesheet">  
+  <link href="<?php bloginfo('template_url'); ?>/stylesheets/style.css" rel="stylesheet">  
 <!--  external stylesheets-->
 <link href="<?php bloginfo('template_url'); ?>/css/royalslider.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="<?php bloginfo('template_url'); ?>/css/rs-default.css" rel="stylesheet" type="text/css" media="screen" />

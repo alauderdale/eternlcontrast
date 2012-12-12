@@ -21,7 +21,6 @@ Template Name: Home
                 <!--end the loop-->
                 <?php endwhile; ?>
                 <?php endif; ?>
-                <h1> How Can We Help You? </h1>
                 <div class="home-services">
                     <?php
                     $servicesloop = new WP_Query( array( 'post_type' => 'home_eservice') );

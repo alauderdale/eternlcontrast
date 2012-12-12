@@ -47,8 +47,8 @@
             <div class="footer-icons">
                 <ul class="footer-social">
                     <li ><a class="rss" href="#"></a></li>
-                    <li ><a class="dribbble" href="#"></a></li>
-                    <li ><a class="twitter" href="#"></a></li>
+                    <li ><a target="_blank" class="dribbble" href="http://dribbble.com/Alauderdale10"></a></li>
+                    <li ><a target="_blank" class="twitter" href="https://twitter.com/Alauderdale10"></a></li>
                 </ul>
             </div>
         </div>

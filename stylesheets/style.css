@@ -1,0 +1,1087 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../../../Users/alauderdale/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Users/alauderdale/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Users/alauderdale/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Users/alauderdale/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Users/alauderdale/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Users/alauderdale/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Users/alauderdale/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Users/alauderdale/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Users/alauderdale/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/style.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/*fonts*/
+@font-face {
+  font-family: 'ozoneregular';
+  src: url("../fonts/ozone-webfont.eot");
+  src: url("../fonts/ozone-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ozone-webfont.woff") format("woff"), url("../fonts/ozone-webfont.ttf") format("truetype"), url("../fonts/ozone-webfont.svg#ozoneregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_900italic';
+  src: url("../fonts/museosans-900italic-webfont.eot");
+  src: url("../fonts/museosans-900italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans-900italic-webfont.woff") format("woff"), url("../fonts/museosans-900italic-webfont.ttf") format("truetype"), url("../fonts/museosans-900italic-webfont.svg#museo_sans_900italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_700italic';
+  src: url("../fonts/museosans-700italic-webfont.eot");
+  src: url("../fonts/museosans-700italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans-700italic-webfont.woff") format("woff"), url("../fonts/museosans-700italic-webfont.ttf") format("truetype"), url("../fonts/museosans-700italic-webfont.svg#museo_sans_700italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_300italic';
+  src: url("../fonts/museosans-300italic-webfont.eot");
+  src: url("../fonts/museosans-300italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans-300italic-webfont.woff") format("woff"), url("../fonts/museosans-300italic-webfont.ttf") format("truetype"), url("../fonts/museosans-300italic-webfont.svg#museo_sans_300italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_300regular';
+  src: url("../fonts/museosans-300-webfont.eot");
+  src: url("../fonts/museosans-300-webfont.eot?#iefix") format("../fonts/embedded-opentype"), url("../fonts/museosans-300-webfont.woff") format("woff"), url("../fonts/museosans-300-webfont.ttf") format("truetype"), url("../fonts/museosans-300-webfont.svg#museo_sans_300regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_100italic';
+  src: url("../fonts/museosans-100italic-webfont.eot");
+  src: url("../fonts/museosans-100italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans-100italic-webfont.woff") format("woff"), url("../fonts/museosans-100italic-webfont.ttf") format("truetype"), url("../fonts/museosans-100italic-webfont.svg#museo_sans_100italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_100regular';
+  src: url("../fonts/museosans-100-webfont.eot");
+  src: url("../fonts/museosans-100-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans-100-webfont.woff") format("woff"), url("../fonts/museosans-100-webfont.ttf") format("truetype"), url("../fonts/museosans-100-webfont.svg#museo_sans_100regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_900regular';
+  src: url("../fonts/museosans_900-webfont.eot");
+  src: url("../fonts/museosans_900-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans_900-webfont.woff") format("woff"), url("../fonts/museosans_900-webfont.ttf") format("truetype"), url("../fonts/museosans_900-webfont.svg#museo_sans_900regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_700regular';
+  src: url("../fonts/museosans_700-webfont.eot");
+  src: url("../fonts/museosans_700-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans_700-webfont.woff") format("woff"), url("../fonts/museosans_700-webfont.ttf") format("truetype"), url("../fonts/museosans_700-webfont.svg#museo_sans_700regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_500regular';
+  src: url("../fonts/museosans_500-webfont.eot");
+  src: url("../fonts/museosans_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans_500-webfont.woff") format("woff"), url("../fonts/museosans_500-webfont.ttf") format("truetype"), url("../fonts/museosans_500-webfont.svg#museo_sans_500regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_500italic';
+  src: url("../fonts/museosans_500_italic-webfont.eot");
+  src: url("../fonts/museosans_500_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans_500_italic-webfont.woff") format("woff"), url("../fonts/museosans_500_italic-webfont.ttf") format("truetype"), url("../fonts/museosans_500_italic-webfont.svg#museo_sans_500italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 181, ../sass/style.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 189, ../sass/style.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+/* line 191, ../sass/style.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 192, ../sass/style.scss */
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
+/*main*/
+/* line 197, ../sass/style.scss */
+body {
+  font-family: 'museo_sans_300regular';
+  color: #414141;
+  background-color: #fff;
+}
+
+/* line 203, ../sass/style.scss */
+.blue-bg {
+  background-color: #1baee4;
+}
+
+/* line 207, ../sass/style.scss */
+.blue {
+  color: #1baee4;
+}
+
+/* line 211, ../sass/style.scss */
+.top-color {
+  width: 100%;
+  height: 10px;
+  background-color: #1baee4;
+}
+
+/* line 217, ../sass/style.scss */
+.content {
+  float: left;
+}
+
+/*global*/
+/* line 223, ../sass/style.scss */
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+/* line 227, ../sass/style.scss */
+.margin-top {
+  margin-top: 10px;
+}
+
+/*type*/
+/* line 233, ../sass/style.scss */
+a {
+  color: #1baee4;
+  text-decoration: none;
+}
+
+/* line 238, ../sass/style.scss */
+a:hover {
+  color: #1382ab;
+}
+
+/* line 242, ../sass/style.scss */
+h1 {
+  font-size: 22pt;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* line 249, ../sass/style.scss */
+h3 {
+  font-size: 18px;
+  font-family: 'museo_sans_700regular';
+  margin-bottom: 10px;
+}
+
+/* line 255, ../sass/style.scss */
+p {
+  font-size: 12pt;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+/* line 261, ../sass/style.scss */
+ul {
+  margin-left: 22px;
+}
+
+/* line 265, ../sass/style.scss */
+li {
+  margin-bottom: 5px;
+}
+
+/* line 269, ../sass/style.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 273, ../sass/style.scss */
+.underline {
+  text-decoration: underline;
+}
+
+/*container*/
+/* line 279, ../sass/style.scss */
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*header*/
+/* line 288, ../sass/style.scss */
+header {
+  border-bottom: 1px solid #ccc;
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+/* line 296, ../sass/style.scss */
+.logo {
+  background-image: url(../images/logo.png);
+  width: 400px;
+  height: 61px;
+  opacity: .8;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+/* line 304, ../sass/style.scss */
+.logo:hover {
+  opacity: 1;
+}
+
+/* line 308, ../sass/style.scss */
+.current_page_item a {
+  color: #1baee4;
+  border-bottom: solid 3px #bbb;
+  padding-bottom: 25px;
+}
+
+/* line 314, ../sass/style.scss */
+ul.main-nav, .main-nav ul {
+  float: right;
+  list-style: none;
+  margin-top: -23px;
+}
+
+/* line 320, ../sass/style.scss */
+ul.main-nav li a, .main-nav ul li a {
+  color: #707070;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+/* line 325, ../sass/style.scss */
+ul.main-nav li a:hover, .main-nav ul li a:hover {
+  color: #1baee4;
+}
+
+/* line 329, ../sass/style.scss */
+ul.main-nav li, .main-nav ul li {
+  float: left;
+  margin-right: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* line 336, ../sass/style.scss */
+ul.main-nav li:last-of-type, .main-nav ul li:last-of-type {
+  margin-right: 0;
+}
+
+/*hero*/
+/* line 342, ../sass/style.scss */
+.hero-title {
+  padding: 0 0 20px 0;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #ccc;
+  float: left;
+  width: 100%;
+}
+/* line 348, ../sass/style.scss */
+.hero-title h1 {
+  font-size: 75px;
+  font-family: 'museo_sans_900regular';
+  line-height: 110%;
+  margin-bottom: 0px;
+}
+
+/* line 357, ../sass/style.scss */
+.hero-blue {
+  font-family: 'museo_sans_300regular';
+}
+
+/* line 361, ../sass/style.scss */
+.hero-descrip {
+  margin: 20px 0 40px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 366, ../sass/style.scss */
+.hero-descrip p {
+  font-size: 21px;
+  font-family: "museo_sans_100regular";
+}
+
+/* line 372, ../sass/style.scss */
+.hero-subtext {
+  font-size: 20pt;
+  font-family: "museo_sans_100regular";
+  margin: 10px 0 0 0;
+}
+
+/*home services*/
+/* line 380, ../sass/style.scss */
+.home-service-featred-img img {
+  width: 390px;
+  height: auto;
+}
+
+/* line 386, ../sass/style.scss */
+.home-services {
+  padding: 20px 0;
+  float: left;
+}
+
+/* line 391, ../sass/style.scss */
+.home-service {
+  float: left;
+  width: 455px;
+  margin-bottom: 70px;
+  margin-right: 50px;
+}
+
+/* line 397, ../sass/style.scss */
+.home-service:nth-child(even) {
+  margin-right: 0;
+}
+
+/* line 401, ../sass/style.scss */
+.home-service h3 {
+  text-transform: uppercase;
+}
+
+/* line 405, ../sass/style.scss */
+.home-service-bottom-links {
+  margin-top: 10px;
+}
+/* line 407, ../sass/style.scss */
+.home-service-bottom-links a {
+  font-family: 'museo_sans_500regular';
+}
+
+/* line 412, ../sass/style.scss */
+a.bar:after {
+  content: " | ";
+}
+
+/*services*/
+/* line 420, ../sass/style.scss */
+.service {
+  width: 100%;
+  float: left;
+  padding: 50px 0;
+}
+/* line 424, ../sass/style.scss */
+.service ul {
+  list-style: disc;
+  margin-top: 20px;
+}
+/* line 427, ../sass/style.scss */
+.service ul li {
+  margin: 10px 0;
+}
+
+/* line 433, ../sass/style.scss */
+.service:nth-child(3n+2) {
+  background-color: #f2f2f2;
+}
+
+/* line 439, ../sass/style.scss */
+.service-descrip {
+  width: 40%;
+  float: left;
+  text-align: left;
+}
+
+/* line 445, ../sass/style.scss */
+.service:nth-child(odd) .service-descrip {
+  float: right!important;
+}
+
+/* line 450, ../sass/style.scss */
+.service-descrip p {
+  margin: 10px 0;
+  float: left;
+}
+
+/* line 455, ../sass/style.scss */
+.service-descrip h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'museo_sans_900regular';
+  margin-bottom: 10px;
+}
+
+/* line 464, ../sass/style.scss */
+.serviceimg {
+  width: 60%;
+  float: right;
+}
+
+/* line 470, ../sass/style.scss */
+.service:nth-child(odd) .serviceimg {
+  float: left;
+}
+
+/* line 474, ../sass/style.scss */
+.service:nth-child(4) .serviceimg img {
+  margin-top: -93px;
+  margin-left: 140px;
+}
+
+/* line 481, ../sass/style.scss */
+.right {
+  float: right;
+}
+
+/* line 485, ../sass/style.scss */
+.left {
+  float: left;
+}
+
+/*portfolio*/
+/* line 492, ../sass/style.scss */
+.top-text p {
+  font-size: 1.3em!important;
+  font-family: "museo_sans_100regular";
+}
+
+/* line 497, ../sass/style.scss */
+.top-text p:first-child:first-letter {
+  font-family: 'ozoneregular';
+  font-size: 135pt!important;
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 71px;
+  margin-top: 50px;
+  margin-left: -29px;
+  color: #c2c2c2;
+  text-transform: uppercase;
+}
+
+/* line 510, ../sass/style.scss */
+.port-select {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  float: left;
+  width: 100%;
+}
+
+/* line 519, ../sass/style.scss */
+ul#filters {
+  list-style: none;
+  margin-left: 320px;
+}
+
+/* line 524, ../sass/style.scss */
+ul#filters li {
+  float: left;
+}
+
+/* line 528, ../sass/style.scss */
+ul#filters a {
+  margin-right: 20px;
+  padding: 10px;
+}
+
+/* line 533, ../sass/style.scss */
+.port-active, .port-active:hover {
+  background-color: #1baee4;
+  color: #fff;
+}
+
+/* line 538, ../sass/style.scss */
+.portfolio {
+  padding-top: 20px;
+}
+
+/* line 543, ../sass/style.scss */
+ul.portfolio-thumbs li, ul.portfolio-thumbs {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
+}
+
+/* line 559, ../sass/style.scss */
+ul.portfolio-thumbs {
+  list-style: none;
+}
+/* line 561, ../sass/style.scss */
+ul.portfolio-thumbs li.portfolio-thumb {
+  float: left;
+  width: 300px;
+  height: 195px;
+  padding-right: 20px;
+  padding-bottom: 18px;
+}
+/* line 568, ../sass/style.scss */
+ul.portfolio-thumbs li.portfolio-thumb a.port-thumb {
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 570, ../sass/style.scss */
+ul.portfolio-thumbs li.portfolio-thumb a.port-thumb:hover {
+  opacity: .1;
+}
+/* line 575, ../sass/style.scss */
+ul.portfolio-thumbs li.portfolio-thumb .port-thumb-descript {
+  float: left;
+  width: 300px;
+  height: 195px;
+  margin-bottom: -195px;
+  background-color: #fafafa;
+}
+/* line 581, ../sass/style.scss */
+ul.portfolio-thumbs li.portfolio-thumb .port-thumb-descript .port-thumb-descript-inner {
+  margin: 20px;
+}
+/* line 583, ../sass/style.scss */
+ul.portfolio-thumbs li.portfolio-thumb .port-thumb-descript .port-thumb-descript-inner h1 {
+  font-size: 12pt;
+}
+/* line 586, ../sass/style.scss */
+ul.portfolio-thumbs li.portfolio-thumb .port-thumb-descript .port-thumb-descript-inner ul {
+  border-left: 1px solid #bbb;
+  padding-left: 20px;
+}
+/* line 589, ../sass/style.scss */
+ul.portfolio-thumbs li.portfolio-thumb .port-thumb-descript .port-thumb-descript-inner ul.tags {
+  margin-left: 5px;
+}
+/* line 591, ../sass/style.scss */
+ul.portfolio-thumbs li.portfolio-thumb .port-thumb-descript .port-thumb-descript-inner ul.tags li {
+  color: #1baee4;
+  font-family: 'museo_sans_500regular';
+}
+
+/*port single*/
+/*slider*/
+/* line 610, ../sass/style.scss */
+.slider {
+  margin-bottom: 10px;
+  clear: both;
+  position: relative;
+  top: -20px;
+}
+
+/* line 619, ../sass/style.scss */
+#gallery-1 {
+  width: 50%;
+  margin: 24px 25% 66px;
+  color: #FFF;
+}
+
+/* line 624, ../sass/style.scss */
+.visibleNearby {
+  background: #141414;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 629, ../sass/style.scss */
+.visibleNearby .rsGCaption {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 18px;
+  padding-bottom: 16px;
+}
+
+/* line 635, ../sass/style.scss */
+.visibleNearby .rsGCaption span {
+  display: block;
+  clear: both;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* line 643, ../sass/style.scss */
+.visibleNearby .rsOverflow,
+.visibleNearby .rsSlide {
+  background: none;
+}
+
+/* line 646, ../sass/style.scss */
+.visibleNearby .rsOverflow {
+  overflow: visible;
+}
+
+/* Scaling transforms */
+/* line 652, ../sass/style.scss */
+.visibleNearby .rsSlide img {
+  opacity: 0.45;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+/* line 664, ../sass/style.scss */
+.visibleNearby .rsActiveSlide img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+/* Non-linear resizing on smaller screens */
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  /* line 675, ../sass/style.scss */
+  #gallery-1 {
+    width: 62%;
+    margin-left: 19%;
+    padding: 12px 0 12px;
+    color: #FFF;
+  }
+
+  /* line 682, ../sass/style.scss */
+  #gallery-1 .rsOverflow,
+  .royalSlider#gallery-1 {
+    height: 400px !important;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  /* line 688, ../sass/style.scss */
+  #gallery-1 .rsOverflow,
+  .royalSlider#gallery-1 {
+    height: 300px !important;
+  }
+}
+/* line 700, ../sass/style.scss */
+ul.port-tags {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* line 708, ../sass/style.scss */
+ul.port-tags li {
+  float: left;
+  margin-right: 5px;
+  color: #1baee4;
+}
+
+/* line 714, ../sass/style.scss */
+ul.port-tags li:after {
+  content: ",";
+}
+
+/* line 718, ../sass/style.scss */
+ul.port-tags li:last-of-type:after {
+  content: "";
+}
+
+/* line 722, ../sass/style.scss */
+h1.port-title {
+  font-size: 40px;
+  font-family: "museo_sans_100regular";
+  font-weight: lighter;
+  width: 40%;
+}
+
+/* line 729, ../sass/style.scss */
+.blockquote {
+  color: #1baee4;
+  font-size: 30px;
+  font-family: 'museo_sans_700regular';
+  font-weight: lighter;
+  width: 30%;
+  float: left;
+  padding: 10px;
+  padding-right: 30px;
+  margin: 0;
+}
+
+/* line 741, ../sass/style.scss */
+.blockquote:after, .blockquote:before {
+  content: "'";
+}
+
+/* line 745, ../sass/style.scss */
+.port-content img {
+  padding: 30px 0 50px 0;
+  width: 100%;
+  height: auto;
+  margin-left: -50px;
+}
+
+/*blog*/
+/* line 754, ../sass/style.scss */
+.blog-container {
+  padding-top: 20px;
+  float: left;
+}
+
+/* line 759, ../sass/style.scss */
+.blog h1 {
+  font-family: 'museo_sans_700regular';
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/* line 765, ../sass/style.scss */
+.blog h1 a {
+  color: #414141;
+}
+
+/* line 769, ../sass/style.scss */
+.blog h1 a:hover {
+  color: #1baee4;
+}
+
+/* line 773, ../sass/style.scss */
+.blog-featured-img {
+  padding: 20px 0;
+}
+
+/* line 777, ../sass/style.scss */
+.blog-featured-img img {
+  width: 730px;
+  height: auto;
+}
+
+/* line 784, ../sass/style.scss */
+.blog {
+  width: 730px;
+  padding-right: 50px;
+  margin-right: 20px;
+  float: left;
+  background-image: url(../images/blog-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+/* line 794, ../sass/style.scss */
+.blog h2 {
+  color: #aaa;
+}
+
+/* line 798, ../sass/style.scss */
+.post {
+  border-bottom: 10px solid #1baee4;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+}
+
+/* line 804, ../sass/style.scss */
+.post:last-of-type {
+  border-bottom: none;
+}
+
+/* line 808, ../sass/style.scss */
+.sidebar-widget {
+  margin-bottom: 20px;
+}
+
+/* line 812, ../sass/style.scss */
+sidebar p {
+  font-size: 12px;
+  color: #999;
+  margin: 0 0 10px 0;
+}
+
+/* line 818, ../sass/style.scss */
+.categories ul {
+  list-style: none;
+  margin: 0;
+  font-size: 12px;
+}
+
+/* line 824, ../sass/style.scss */
+sidebar a {
+  color: #999;
+  display: block;
+}
+
+/* line 829, ../sass/style.scss */
+sidebar a:hover {
+  color: #1baee4;
+}
+
+/* line 833, ../sass/style.scss */
+sidebar {
+  width: 160px;
+  float: left;
+}
+
+/* line 838, ../sass/style.scss */
+sidebar h1 {
+  font-size: 14px;
+  text-transform: uppercase;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px 0;
+  font-family: "museo_sans_100regular";
+}
+
+/*sub footer*/
+/* line 851, ../sass/style.scss */
+.inner {
+  width: 960px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+/* line 857, ../sass/style.scss */
+.sub-footer {
+  background-image: url(../images/footer-pattern.png);
+  -webkit-box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
+  float: left;
+  width: 100%;
+  padding: 80px 0;
+  margin-top: 50px;
+  color: #585858;
+}
+/* line 865, ../sass/style.scss */
+.sub-footer h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  font-family: "museo_sans_100regular";
+}
+/* line 873, ../sass/style.scss */
+.sub-footer p {
+  font-size: 14px;
+}
+
+/* line 878, ../sass/style.scss */
+.footer-col {
+  float: left;
+  width: 280px;
+  padding-right: 40px;
+}
+
+/* line 886, ../sass/style.scss */
+.footer-post {
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+}
+
+/* line 892, ../sass/style.scss */
+a.square-button {
+  background-color: #999;
+  color: #fff;
+  padding: 15px;
+  width: 90%;
+  float: left;
+  text-align: center;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  font-family: "museo_sans_100regular";
+  letter-spacing: 1px;
+}
+
+/* line 905, ../sass/style.scss */
+a.square-button:hover {
+  background-color: #888;
+}
+
+/* line 909, ../sass/style.scss */
+a.blue-square-button {
+  background-color: #1baee4;
+  color: #fff;
+  padding: 15px;
+  width: 45%;
+  float: left;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -ms-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  font-family: "museo_sans_100regular";
+  letter-spacing: 1px;
+}
+
+/* line 922, ../sass/style.scss */
+a.blue-square-button:hover {
+  background-color: #1382ab;
+}
+
+/* line 927, ../sass/style.scss */
+footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 20px 0;
+  float: left;
+  width: 100%;
+  font-family: "museo_sans_100regular";
+}
+
+/* line 936, ../sass/style.scss */
+ul.footer-social {
+  float: right;
+  list-style: none;
+  margin-top: -28px;
+}
+
+/* line 942, ../sass/style.scss */
+ul.footer-social li {
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 947, ../sass/style.scss */
+ul.footer-social li {
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 952, ../sass/style.scss */
+.footer-icons a {
+  opacity: .5;
+}
+
+/* line 956, ../sass/style.scss */
+.footer-icons a:hover {
+  opacity: 1;
+}
+
+/* line 960, ../sass/style.scss */
+a.rss {
+  width: 31px;
+  height: 31px;
+  background-image: url(../images/RSS.png);
+  float: left;
+}
+
+/* line 967, ../sass/style.scss */
+a.dribbble {
+  width: 33px;
+  height: 33px;
+  background-image: url(../images/Dribbble.png);
+  float: left;
+}
+
+/* line 974, ../sass/style.scss */
+a.twitter {
+  width: 42px;
+  height: 30px;
+  background-image: url(../images/Twitter.png);
+  float: left;
+}

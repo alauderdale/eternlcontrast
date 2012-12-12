@@ -25,15 +25,15 @@ $servicesloop = new WP_Query( array( 'post_type' => 'home_eservice') );
     <div class="service">
         <div class="inner">
             <div class="service-descrip">
-                <h4><?php the_title(); ?></h4>
-                <a href="index.php?pagename=portfolio" class="blue-square-button">
-                    View Portfolio
-                </a>
-                <div class="clearfix"></div>
+                <h4 class="uppercase"><?php the_title(); ?></h4>
                 <p>
                     <?php the_content(); ?>
                 </p>
-                <h3>Development Services</h3>
+                <a href="index.php?pagename=portfolio" class="margin-bottom margin-top blue-square-button">
+                    View Portfolio
+                </a>
+                <div class="clearfix"></div>
+                <h3><?php the_title(); ?> Services</h3>
                 <ul>
                     <?php 
                         $product_terms = wp_get_object_terms($post->ID, 'service');

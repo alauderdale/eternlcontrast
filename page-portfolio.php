@@ -52,7 +52,25 @@ Template Name: Portfolio
                 <?php endif; ?>
                 
                 ">
-                    <a href="<?php the_permalink(); ?>">
+                    <div class="port-thumb-descript">
+                      <div class="port-thumb-descript-inner">
+                        <h1><?php the_title(); ?></h1>
+                        <ul class="tags">
+                          <?php 
+                            $product_terms = wp_get_object_terms($post->ID, 'skill');
+                            if(!empty($product_terms)){
+                            if(!is_wp_error( $product_terms )){
+                            foreach($product_terms as $term){
+                            echo '<li>'.$term->name.'</li>'; 
+                                }
+                              }
+                            }
+                          ?>
+
+                        </ul>
+                      </div>
+                    </div>
+                    <a class="port-thumb" href="<?php the_permalink(); ?>">
                         <img src="<?php
                         $imgsrc2 = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "Full");
                         echo $imgsrc2[0];

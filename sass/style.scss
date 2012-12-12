@@ -1,3 +1,14 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@import 'bourbon/bourbon';
+
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit;}
 
 /*fonts*/
@@ -161,6 +172,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 }
 
+// vars
+
+$primaryColor:#1baee4;
+$ltFont:'museo_sans_100regular';
+
 
 .clearfix:after {
      visibility: hidden;
@@ -185,27 +201,37 @@ body{
 }
 
 .blue-bg{
-    background-color:#1baee4!important ;
+    background-color:$primaryColor ;
 }
 
 .blue{
-    color: #1baee4;
+    color: $primaryColor;
 }
 
 .top-color{
   width: 100%;
   height: 10px;
-  background-color:#1baee4;
+  background-color:$primaryColor;
 }
 
 .content{
     float: left;
 }
 
+/*global*/
+
+.margin-bottom{
+    margin-bottom:20px;
+}
+
+.margin-top{
+    margin-top:10px;
+}
+
 /*type*/
 
 a {
-  color: #1baee4;
+  color: $primaryColor;
   text-decoration: none;
 }
 
@@ -240,6 +266,14 @@ li{
     margin-bottom: 5px;
 }
 
+.uppercase{
+    text-transform:uppercase;
+}
+
+.underline{
+    text-decoration:underline;
+}
+
 /*container*/
 
 #container{
@@ -261,9 +295,10 @@ header{
 
 .logo  {
     background-image: url(../images/logo.png);
-    width: 283px;
+    width: 400px;
     height: 61px;
     opacity: .8;
+    @include transition-duration(.3s);
 }
 
 .logo:hover{
@@ -271,8 +306,8 @@ header{
 }
 
 .current_page_item a{
-    color:#1baee4!important;
-    border-bottom: solid 3px #1baee4;
+    color:$primaryColor;
+    border-bottom: solid 3px #bbb;
     padding-bottom: 25px;
 }
 
@@ -284,10 +319,11 @@ ul.main-nav, .main-nav ul{
 
 ul.main-nav li a, .main-nav ul li a{
     color:#707070;
+    @include transition-duration(.3s);
 }
 
 ul.main-nav li a:hover, .main-nav ul li a:hover{
-    color:#1baee4;
+    color:$primaryColor;
 }
 
 ul.main-nav li, .main-nav ul li{
@@ -309,14 +345,14 @@ ul.main-nav li:last-of-type, .main-nav ul li:last-of-type{
     border-bottom: 1px solid #ccc;
     float: left;
     width: 100%;
+    h1{
+        font-size: 75px;
+        font-family: 'museo_sans_900regular';
+        line-height: 110%;  
+        margin-bottom: 0px;
+    }
 }
 
-.hero-title h1{
-    font-size: 75px;
-    font-family: 'museo_sans_900regular';
-    line-height: 104%;  
-    margin-bottom: 0px;
-}
 
 .hero-blue{
     font-family: 'museo_sans_300regular';
@@ -329,13 +365,13 @@ ul.main-nav li:last-of-type, .main-nav ul li:last-of-type{
 
 .hero-descrip p{
     font-size: 21px;
-    font-family: 'museo_sans_100regular';
+    font-family: $ltFont;
 
 }
 
 .hero-subtext{
     font-size: 20pt;
-    font-family: 'museo_sans_100regular';
+    font-family: $ltFont;
     margin: 10px 0 0 0;
 }
 
@@ -368,6 +404,9 @@ ul.main-nav li:last-of-type, .main-nav ul li:last-of-type{
 
 .home-service-bottom-links{
     margin-top: 10px;
+    a{
+        font-family:'museo_sans_500regular';
+    }
 }
 
 a.bar:after{
@@ -381,8 +420,14 @@ a.bar:after{
 .service{
     width: 100%;
     float: left;
-    padding: 20px 0;
-    
+    padding: 50px 0;
+    ul{
+        list-style:disc;
+        margin-top:20px;
+        li{
+            margin: 10px 0;
+        }
+    }
 }
 
 .service:nth-child(3n+2) {
@@ -428,6 +473,7 @@ a.bar:after{
 
 .service:nth-child(4) .serviceimg img {
     margin-top: -93px;
+    margin-left:140px;
 }
 
 
@@ -445,7 +491,7 @@ a.bar:after{
 
 .top-text p{
     font-size: 1.3em!important;
-    font-family: 'museo_sans_100regular';
+    font-family: $ltFont;
 }
 
 .top-text p:first-child:first-letter{
@@ -485,7 +531,7 @@ ul#filters a{
 }
 
 .port-active, .port-active:hover{
-    background-color:#1baee4;
+    background-color:$primaryColor;
     color: #fff;
 }
 
@@ -512,20 +558,49 @@ ul.portfolio-thumbs li, ul.portfolio-thumbs {
 
 ul.portfolio-thumbs{
     list-style: none;
+    li.portfolio-thumb{
+        float: left;
+        width: 300px;
+        height: 195px;
+        padding-right:20px;
+        padding-bottom: 18px;
+        a{
+            &.port-thumb{
+                @include transition-duration(.3s);
+                &:hover{
+                    opacity: .1;
+                }
+            }
+        } 
+        .port-thumb-descript{
+            float: left;
+            width: 300px;
+            height: 195px;
+            margin-bottom:-195px;
+            background-color:#fafafa;
+            .port-thumb-descript-inner{
+                margin:20px;
+                h1{
+                    font-size:12pt;
+                }
+                ul{
+                    border-left:1px solid #bbb;
+                    padding-left:20px;
+                    &.tags{
+                        margin-left:5px;
+                        li{
+                            color:$primaryColor;
+                            font-family:'museo_sans_500regular';
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-ul.portfolio-thumbs li{
-    float: left;
-    width: 300px;
-    height: 195px;
-    padding-right:20px;
-    padding-bottom: 18px;
-}
 
 
-.portfolio-thumb a:hover{
-    opacity: .8;
-}
 
 /*port single*/
 
@@ -633,7 +708,7 @@ ul.port-tags{
 ul.port-tags li{
     float: left;
     margin-right: 5px;
-    color: #1baee4;
+    color: $primaryColor;
 }
 
 ul.port-tags li:after{
@@ -646,13 +721,13 @@ ul.port-tags li:last-of-type:after{
 
 h1.port-title{
     font-size: 40px;
-    font-family: 'museo_sans_100regular';
+    font-family: $ltFont;
     font-weight: lighter;
     width: 40%;
 }
 
 .blockquote{
-    color: #1baee4;
+    color: $primaryColor;
     font-size: 30px;
     font-family: 'museo_sans_700regular';
     font-weight: lighter;
@@ -664,7 +739,7 @@ h1.port-title{
 }
 
 .blockquote:after, .blockquote:before{
-    content: '"';
+    content: "'";
 }
 
 .port-content img{
@@ -692,7 +767,7 @@ h1.port-title{
 }
 
 .blog h1 a:hover{
-    color:#1baee4;
+    color:$primaryColor;
 }
 
 .blog-featured-img{
@@ -721,7 +796,7 @@ h1.port-title{
 }
 
 .post{
-    border-bottom: 10px solid #1baee4;
+    border-bottom: 10px solid $primaryColor;
     margin-bottom: 60px;
     padding-bottom: 40px;
 }
@@ -752,7 +827,7 @@ sidebar a{
 }
 
 sidebar a:hover{
-    color: #1baee4;
+    color: $primaryColor;
 }
 
 sidebar{
@@ -766,7 +841,7 @@ sidebar h1{
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
     padding: 10px 0;
-    font-family: 'museo_sans_100regular';
+    font-family: $ltFont;
 }
 
 
@@ -781,12 +856,23 @@ sidebar h1{
 
 .sub-footer{
     background-image: url(../images/footer-pattern.png);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.1);
+    @include box-shadow(inset 0 2px 6px rgba(0,0,0,.4));
     float: left;
     width: 100%;
-    padding: 20px 0;
+    padding: 80px 0;
     margin-top: 50px;
     color: #585858;
+    h1{
+        font-size: 18px;
+        text-transform: uppercase;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+        font-family: $ltFont;      
+    }
+    p{
+        font-size: 14px;
+    }
 }
 
 .footer-col{
@@ -795,18 +881,7 @@ sidebar h1{
     padding-right: 40px;
 }
 
-.sub-footer h1{
-    font-size: 18px;
-    text-transform: uppercase;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-    font-family: 'museo_sans_100regular';
-}
 
-.sub-footer p{
-    font-size: 14px;
-}
 
 .footer-post{
     margin-top: 10px;
@@ -815,25 +890,33 @@ sidebar h1{
 }
 
 a.square-button {
-    background-color: #ccc;
+    background-color: #999;
     color: #fff;
     padding: 15px;
     width: 90%;
     float: left;
     text-align: center;
+    @include transition-duration(.3s);
+    @include border-radius(4px);
+    font-family:$ltFont;
+    letter-spacing:1px;  
 }
 
 a.square-button:hover {
-    background-color: #999;
+    background-color: #888;
 }
 
 a.blue-square-button{
-background-color:#1baee4;
+background-color:$primaryColor;
 color: #fff;
-padding: 5px;
+padding: 15px;
 width: 45%;
 float: left;
 text-align: center; 
+@include transition-duration(.4s);
+@include border-radius(4px);
+font-family:$ltFont;
+letter-spacing:1px;
 }
 
 a.blue-square-button:hover {
@@ -847,7 +930,7 @@ footer{
     padding: 20px 0 ;
     float: left;
     width: 100%;
-    font-family: 'museo_sans_100regular';
+    font-family: $ltFont;
 }
 
 ul.footer-social{
