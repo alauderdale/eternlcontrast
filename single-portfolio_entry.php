@@ -77,6 +77,15 @@
     </div>
 </div>
 <div class="clearfix"></div>
+<div class="inner">
+    <div class="port-nav">
+        <a class="prev left" href="<?php echo get_permalink(get_adjacent_post(false,'',false)); ?>">« Previous Project</a>
+        <a class="next right" href="<?php echo get_permalink(get_adjacent_post(false,'',true)); ?>">Next Project »</a>
+    </div>
+    <div class="port-home-link">
+        <p class="port-main-link"><a href="index.php?pagename='portfolio'">Cool</a></p>
+    </div>
+</div>
 
 
 <?php get_footer(); ?>

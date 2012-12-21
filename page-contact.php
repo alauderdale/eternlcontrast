@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Contact
+ */
+?>
+
 <?php get_header(); ?>
 
 <div class="inner">
@@ -13,6 +19,9 @@
 
 <div class="inner">
     <?php the_content(); ?>
+    <div class="contact-form">
+        <?php echo do_shortcode('[contact-form-7 id="84" title="Contact form 1"]'); ?>
+    </div>
 </div>
 
 <?php get_footer(); ?>

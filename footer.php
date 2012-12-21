@@ -28,14 +28,14 @@
             <div class="footer-col">
                 <h1>Contact</h1>
                 <div class="footer-post">
-                    <h2><a href="mailto:alauderdale@mac.com">Email</a></h2>
-                    <p>alauderdale@mac.com</p>
+                    <h2>Email</h2>
+                    <p><a href="mailto:alauderdale@mac.com">design@eternalcontrast.com</a></p>
                 </div>
                 <div class="footer-post">
                     <h2>Phone</h2>
                     <p>970.396.3943</p>
                 </div>
-                <a class="square-button" href="#">Request Our Services</a>
+                <a class="square-button" href="index.php?pagename='contact'">Request Our Services</a>
             </div>
         </div>
     </div>

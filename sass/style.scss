@@ -224,6 +224,10 @@ body{
     margin-bottom:20px;
 }
 
+.margin-left{
+    margin-left:20px;
+}
+
 .margin-top{
     margin-top:10px;
 }
@@ -291,6 +295,7 @@ header{
     width: 100%;
     margin: 20px 0;
     padding: 20px 0;
+    margin-top:0;
 }
 
 .logo  {
@@ -604,6 +609,35 @@ ul.portfolio-thumbs{
 
 /*port single*/
 
+.port-nav{
+  border-top:solid #bbb 1px;
+  border-bottom:solid #bbb 1px;
+  float: left;
+  width:100%;
+  padding:20px 0;
+  margin-top:40px;
+}
+
+.port-home-link{
+  width:30px;
+  margin:0 auto;
+  position:relative;
+  top:-45px;
+}
+
+p.port-main-link {
+  a{
+    width: 30px;
+    height:30px;
+    background-image:url(../images/square.png);
+    float: left;
+    text-indent:-99999px;
+    @include transition-duration(.3s);
+    &:hover{
+      opacity:.5;
+    }
+  }
+}
 
 /*slider*/
 
@@ -729,7 +763,7 @@ h1.port-title{
 .blockquote{
     color: $primaryColor;
     font-size: 30px;
-    font-family: 'museo_sans_700regular';
+    font-family: 'museo_sans_300regular';
     font-weight: lighter;
     width: 30%;
     float: left;
@@ -739,7 +773,7 @@ h1.port-title{
 }
 
 .blockquote:after, .blockquote:before{
-    content: "'";
+    content: "";
 }
 
 .port-content img{
@@ -844,7 +878,54 @@ sidebar h1{
     font-family: $ltFont;
 }
 
+/*contact form*/
 
+.contact-form{
+  margin-top:40px;
+  float: left;
+  .wpcf7-mail-sent-ok{
+    border:none;
+    color:green;
+  }
+  .wpcf7-validation-errors{
+    border:none;
+    color:red;
+  }
+  input[type="text"],textarea{
+    padding:10px;
+    box-shadow:none;
+    border:1px solid #ddd;
+  }
+  input[type="text"]{
+    width:300px;
+    height:20px;
+    font-size:20pt;
+    margin-top:10px;
+  }
+  textarea{
+    width:590px;
+    height:400px;
+    font-size:10pt;
+    margin-top:10px;
+  }
+  input[type="submit"]{
+    background:none;
+    border:none;
+    margin-top:40px;
+    padding:20px 40px;
+    width:150px;
+    font-size:12pt;
+    color:#fff;
+    background-color:$primaryColor;
+    cursor:pointer;
+    @include border-radius(4px);
+    @include transition-duration(.3s);
+    &:hover{
+      background-color:shade($primaryColor,30%);
+    }
+  }
+
+}
 
 /*sub footer*/
 
@@ -859,7 +940,7 @@ sidebar h1{
     @include box-shadow(inset 0 2px 6px rgba(0,0,0,.4));
     float: left;
     width: 100%;
-    padding: 80px 0;
+    padding: 40px 0;
     margin-top: 50px;
     color: #585858;
     h1{

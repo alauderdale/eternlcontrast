@@ -1,7 +1,7 @@
 <?php get_header(); ?>
             <div class="inner">
                 <h3>
-                    Posts in:
+                    Displaying Posts in:
                     <span class="blue">
                     <?php
                     $category = get_the_category(); 
