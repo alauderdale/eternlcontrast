@@ -31,7 +31,7 @@ Template Name: Home
                             <p>
                                 <?php echo get_post_meta($post->ID, 'service_preview', true); ?> 
                             </p>
-                            <a href="index.php?pagename=services">
+                            <a href="index.php?pagename=services#<?php echo $post->post_name;?>">
                             <div class="home-service-featred-img">
 <!--                                 <?php echo get_the_post_thumbnail(); ?>  -->
                                   <img src="<?php echo get_post_meta($post->ID, 'upload_image', true); ?>" />
@@ -39,7 +39,7 @@ Template Name: Home
                             </a>
                             <div class="home-service-bottom-links">
                                 <a class="bar" href="index.php?pagename=portfolio">Portfolio</a>
-                                <a href="index.php?pagename=services">Services</a>
+                                <a href="index.php?pagename=services#<?php echo $post->post_name;?>">Services</a>
                             </div>
                         </div>
                     <?php endwhile; ?>

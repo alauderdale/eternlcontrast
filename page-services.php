@@ -22,7 +22,7 @@ $servicesloop = new WP_Query( array( 'post_type' => 'home_eservice') );
  ?>
  <?php while ( $servicesloop->have_posts() ) : $servicesloop->the_post(); ?>
 
-    <div class="service">
+    <div class="service" id="<?php echo $post->post_name;?>">
         <div class="inner">
             <div class="service-descrip">
                 <h4 class="uppercase"><?php the_title(); ?></h4>

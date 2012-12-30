@@ -573,7 +573,7 @@ ul.portfolio-thumbs{
             &.port-thumb{
                 @include transition-duration(.3s);
                 &:hover{
-                    opacity: .1;
+                    opacity: .03;
                 }
             }
         } 
@@ -582,11 +582,14 @@ ul.portfolio-thumbs{
             width: 300px;
             height: 195px;
             margin-bottom:-195px;
-            background-color:#fafafa;
+            background-color:#272727;
             .port-thumb-descript-inner{
                 margin:20px;
                 h1{
                     font-size:12pt;
+                    color:#fff;
+                    line-height:120%;
+                    text-transform:none;
                 }
                 ul{
                     border-left:1px solid #bbb;
@@ -594,7 +597,7 @@ ul.portfolio-thumbs{
                     &.tags{
                         margin-left:5px;
                         li{
-                            color:$primaryColor;
+                            color:#bbb;
                             font-family:'museo_sans_500regular';
                         }
                     }
