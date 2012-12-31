@@ -7,7 +7,7 @@ Template Name: Services
 <?php get_header(); ?>
 
 <div class="inner">
-    <div class="hero-title" style="text-align:center; border-bottom:none; margin-bottom:0px;">
+    <div class="hero-title" style="text-align:center; border-bottom:none; margin-bottom:0px; padding-bottom:0;">
        <h1> Our services</h1>
        <p class="hero-subtext">
            <?php echo get_post_meta($post->ID, 'hero_sub', true); ?>
@@ -39,6 +39,7 @@ $servicesloop = new WP_Query( array( 'post_type' => 'home_eservice') );
      <?php while ( $servicesloop->have_posts() ) : $servicesloop->the_post(); ?>
 
         <div class="service" id="<?php echo $post->post_name;?>">
+            <div class="spacer"></div>
             <div class="inner">
                 <div class="service-descrip">
                     <h4 class="uppercase"><?php the_title(); ?></h4>

@@ -422,13 +422,17 @@ a.bar:after{
 /*services*/
 
 .sticky-menu{
-
+  width:100%;
+  float: left;
+  background-color:#fff;
+  .inner{
+    padding:0;
+  }
   ul{
     background-color:#fff;
     padding:20px 0 15px 0;
     margin-left:0;
     width:100%;
-    margin-top:18px;
     border-top:1px solid #ccc;
     border-bottom:1px solid #ccc;
     float: left;
@@ -449,6 +453,10 @@ a.bar:after{
   }
 }
 
+.spacer{
+  height:60px;
+}
+
 .service{
     width: 100%;
     float: left;
@@ -462,7 +470,7 @@ a.bar:after{
     }
 }
 
-.service:nth-child(3n+2) {
+.service:nth-child(3n+1) {
     background-color: #f2f2f2;
 }
 
@@ -504,7 +512,7 @@ a.bar:after{
 }
 
 .service:nth-child(4) .serviceimg img {
-    margin-top: -93px;
+    
 }
 
 
