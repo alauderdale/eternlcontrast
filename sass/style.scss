@@ -428,7 +428,7 @@ a.bar:after{
     padding:20px 0 15px 0;
     margin-left:0;
     width:100%;
-    margin-top:-21px;
+    margin-top:18px;
     border-top:1px solid #ccc;
     border-bottom:1px solid #ccc;
     float: left;
@@ -474,7 +474,7 @@ a.bar:after{
     text-align: left;
 }
 
-.service:nth-child(odd) .service-descrip {
+.service:nth-child(even) .service-descrip {
     float: right!important;
 }
 
@@ -505,7 +505,6 @@ a.bar:after{
 
 .service:nth-child(4) .serviceimg img {
     margin-top: -93px;
-    margin-left:140px;
 }
 
 

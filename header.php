@@ -16,8 +16,10 @@
   <script src="<?php bloginfo('template_url'); ?>/js/isotope.config.js"></script>
   <!--slider-->
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.royalslider.min.js"></script>
-  <!--custom scripts-->
+  <!--sticky-->
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.stickyscroll.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/scrolling.js"></script>
+  <!--custom scripts-->
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
   <?php wp_head(); ?>
 </head>

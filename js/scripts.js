@@ -17,7 +17,7 @@ $(document).ready(function(){
         	}
   });
 
-
+/// filters
 
 $('ul#filters li a').click(function(){
 
@@ -27,7 +27,8 @@ $('ul#filters li a').click(function(){
 });
 
 
+/// sticky
 
-
+  $('#sticky-menu').stickyScroll({ container: '.services-contiainer' });
 
 });
