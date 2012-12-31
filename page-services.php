@@ -7,19 +7,33 @@ Template Name: Services
 <?php get_header(); ?>
 
 <div class="inner">
-    <div class="hero-title">
+    <div class="hero-title" style="text-align:center;">
        <h1> Our services</h1>
        <p class="hero-subtext">
            <?php echo get_post_meta($post->ID, 'hero_sub', true); ?>
        </p>
     </div>
 </div>
-
-<!-- begin services loop -->
-
 <?php
 $servicesloop = new WP_Query( array( 'post_type' => 'home_eservice') );
  ?>
+<div class="sticky-menu">
+    <div class="inner">
+        <ul>
+             <?php while ( $servicesloop->have_posts() ) : $servicesloop->the_post(); ?>
+            <li>
+                <a href="#<?php echo $post->post_name;?>">
+                    <?php the_title(); ?>
+                </a>
+            </li>
+            <?php endwhile; ?>
+        </ul>
+    </div>
+</div>
+<div class="clearfix"></div>
+<!-- begin services loop -->
+
+
  <?php while ( $servicesloop->have_posts() ) : $servicesloop->the_post(); ?>
 
     <div class="service" id="<?php echo $post->post_name;?>">

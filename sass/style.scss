@@ -421,6 +421,33 @@ a.bar:after{
 
 /*services*/
 
+.sticky-menu{
+
+  ul{
+    background-color:#fff;
+    padding:20px 0 15px 0;
+    margin-left:0;
+    width:100%;
+    margin-top:-21px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    float: left;
+    li{
+      font-size:11pt;
+      float: left;
+      margin-right:50px;
+      &:first-of-type{
+        margin-left:112px;
+      }
+      &:last-of-type{
+        margin-right:0;
+      }
+      a{
+
+      }
+    }
+  }
+}
 
 .service{
     width: 100%;

@@ -17,6 +17,7 @@
   <!--slider-->
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.royalslider.min.js"></script>
   <!--custom scripts-->
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/scrolling.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
   <?php wp_head(); ?>
 </head>
